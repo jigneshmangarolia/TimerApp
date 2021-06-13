@@ -12,11 +12,10 @@ function getTime() {
 }
 function display_Time() {
   let cTime = new Date(); // Can use this for month, day, year, hours, minutes, and seconds.
-  let currentTime = cTime.getHours() + ':' + cTime.getMinutes() + ':' + cTime.getSeconds();
+  let currentTime = moment().format('LTS');
   let currentDate = cTime.toLocaleString('en-GB');
-  //let cDate = cTime.toLocaleString('en-US', { timeZone: 'America' });
-  //console.log(currentTime);
-  //document.getElementById('date-id').innerHTML = cDate;
+  let cDate = moment().format('LL');
+  document.getElementById('date-id').innerHTML = cDate;
   document.getElementById('hi-id').innerHTML = currentTime;
   getTime();
 }
