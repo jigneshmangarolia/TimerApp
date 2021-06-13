@@ -1,0 +1,47 @@
+body {
+  font: Helvetica, sans-serif;
+  background-image: url(images/mountain1.jpeg);
+  background-size: cover;
+}
+
+h1 {
+  font-size: 100px;
+  color: aliceblue;
+  text-align: center;
+  margin-top: 100px auto;
+}
+
+h2 {
+  font-size: 60px;
+  color: aliceblue;
+  text-align: center;
+  margin-top: 275px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0px;
+  overflow: hidden;
+  background-color: #333;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
